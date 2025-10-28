@@ -12,3 +12,8 @@ function getRandomColor() {
   }
   return color;
 }
+
+function setBallSize(elBall, ballSize) {
+   elBall.style.width = ballSize + 'px'
+   elBall.style.height = ballSize + 'px'
+}
