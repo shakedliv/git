@@ -1,3 +1,7 @@
+var gFirstBallDiameter = 400
+var gSecondBallDiameter = 250
+
+
 function onBallClick(elBall, maxDiameter) {
     var ballSize = +elBall.innerText
     ballSize += getRandomInt(20, 60)
@@ -20,4 +24,11 @@ function swapBalls() {
     setBallSize(secondBall, tempSize)
     firstBall.innerText = secondBall.innerText
     secondBall.innerText = tempSize
+}
+
+function reduceDiameter() {
+   gFirstBallDiameter -= getRandomInt(20, 60)
+   gSecondBallDiameter -= getRandomInt(20, 60)
+   if(gFirstBallDiameter < 100 ) gFirstBallDiameter = 100
+   if(gSecondBallDiameter < 100 ) gSecondBallDiameter = 100
 }
