@@ -48,3 +48,16 @@ h1{
    font-size: 12px;
    transition: 1s;
 }
+.ball4{
+   background-color: rgb(75, 197, 26);
+   border-radius: 50%;
+   width: 100px;
+   height: 100px;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: bold;
+   font-size: 12px;
+   transition: 1s;
+}
