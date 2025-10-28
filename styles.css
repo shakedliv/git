@@ -4,6 +4,12 @@ body{
 h1{
    color: white;
 }
+.balls{
+   display: grid;
+   grid-template-columns: repeat(3,120px);
+   grid-template-rows: repeat(3,120px);
+   place-self: center;
+}
 .ball{
    border-radius: 50%;
    width: 100px;
@@ -23,7 +29,6 @@ h1{
    width: 100px;
    height: 100px;
    margin: auto;
-   margin-top: 20px;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -37,7 +42,6 @@ h1{
    width: 100px;
    height: 100px;
    margin: auto;
-   margin-top: 20px;
    display: flex;
    justify-content: center;
    align-items: center;
