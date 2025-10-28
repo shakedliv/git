@@ -1,8 +1,8 @@
-function onBallClick(elBall) {
+function onBallClick(elBall, maxDiameter) {
 
     var ballSize = +elBall.innerText
     ballSize += getRandomInt(20, 60)
-   if (ballSize > 400) ballSize = 100
+   if (ballSize > maxDiameter) ballSize = 100
     const rndColor = getRandomColor()
     elBall.style.backgroundColor = rndColor
     elBall.style.width = ballSize + 'px'
