@@ -5,10 +5,9 @@ h1{
    color: white;
 }
 .balls{
-   display: grid;
-   grid-template-columns: repeat(3);
-   grid-template-rows: repeat(3);
-   place-self: center;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
 }
 .ball{
    border-radius: 50%;
